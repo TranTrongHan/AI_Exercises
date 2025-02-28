@@ -9,7 +9,7 @@ def print_name_char(name):
 
     for char in name:
         print(char)
-
+print_name_char('Tran Trong Han')
 
 #2/ Print all odd numbers x such that 1<=x<=10
 def print_odd():
@@ -18,16 +18,17 @@ def print_odd():
     for num in list:
         if num%2!=0:
             print(num)
-
+print_odd()
 #3/ a/Compute the sum of all numbers in 2/
 def print_sum():
     total_sum = sum(range(1, 3))
     print(total_sum)
+print_sum()
 #b/ Compute the sum of all number from 1 to 6
 def print_sum1():
     total_sum = sum(range(1, 7))
     print(total_sum)
-
+print_sum1()
 #4/ Given mydict={“a”: 1,”b”:2,”c”:3,”d”:4}.
 
 # a/ Print all key in mydict
@@ -36,21 +37,21 @@ def print_key():
     print("Tất cả các khóa trong mydict:")
     for key in mydict.keys():
         print(key)
-
+print_key()
 # b/ Print all values in mydict
 def print_values():
     mydict = {"a": 1, "b": 2, "c": 3, "d": 4}
     print("\nTất cả các giá trị trong mydict:")
     for value in mydict.values():
         print(value)
-
+print_values()
 # c/ Print all keys and values
 def print_key_values():
     mydict = {"a": 1, "b": 2, "c": 3, "d": 4}
     print("\nTất cả các khóa và giá trị trong mydict:")
     for key, value in mydict.items():
         print(f"{key}: {value}")
-
+print_key_values()
 # 5/ Given courses=[131,141,142,212] and names=[“Maths”,”Physics”,”Chem”, “Bio”].
 # Print a sequence of tuples, each of them contains one courses and one names
 
@@ -62,7 +63,7 @@ def print_course_name_tuples():
     course_name_tuples = list(zip(courses, names))
     for course_name in course_name_tuples:
         print(course_name)
-
+print_course_name_tuples()
 #6/ Find the number of consonants in “jabbawocky” by two ways
 # 	a/ Directly (i.e without using the command “continue”)
 def count_consonants_directly():
@@ -75,6 +76,7 @@ def count_consonants_directly():
 
 
     print("Số lượng phụ âm (trực tiếp):", count)
+count_consonants_directly()
 # 	b/ Check whether it’s characters are in vowels set and using the command “continue”
 def count_consonants_with_continue():
     vowels = "aeiou"
@@ -87,7 +89,7 @@ def count_consonants_with_continue():
 
 
     print("Số lượng phụ âm (sử dụng continue):", count)
-
+count_consonants_with_continue()
 
 
 #7/ a is a number such that -2<=a<3.
@@ -99,7 +101,7 @@ def calculate_division():
             print(f"10 / {a} = {result}")
         except ZeroDivisionError:
             print("can't divide by zero")
-
+calculate_division()
 #8/ Given ages=[23,10,80]
 # And names=[Hoa,Lam,Nam]. Using lambda function to sort a list containing tuples (“age”,”name”) by increasing of the ages
 def sort_ages_names():
@@ -116,6 +118,7 @@ def sort_ages_names():
     print("Danh sách đã sắp xếp theo tuổi:")
     for item in sorted_tuples:
         print(item)
+sort_ages_names()
 ## READ FILES
 #9/ Create  a file “firstname.txt”:
 # a/ Open this file for reading
@@ -135,7 +138,7 @@ def read_firstname_file():
             print(content)
     except FileNotFoundError:
         print(f"File không tồn tại.")
-
+read_firstname_file()
 
 ## DEFINE A FUNCTION
 # 1/ Define a function that return the sum of two numbers a and b. Try with a=3, b=4.
@@ -170,7 +173,7 @@ def create_matrix_and_vector():
     print("\nHạng của ma trận M:", rank_M)
     print("Hình dạng của ma trận M:", shape_M)
     print("Hình dạng của vector v:", shape_v)
-
+create_matrix_and_vector()
 # 3/ Create a new 3x3 matrix such that its’ elements are the sum of corresponding (position) element of M plus 3.
 def create_and_modify_matrix():
     # Tạo ma trận 3x3 M
@@ -192,7 +195,7 @@ def create_and_modify_matrix():
     print("\nMa trận mới (M + 3):")
     print(new_matrix)
 
-
+create_and_modify_matrix()
 # 4/ Create the transpose of M and v
 def create_and_modify_matrix():
     # Tạo ma trận 3x3 M
@@ -223,7 +226,7 @@ def create_and_modify_matrix():
     print(transpose_M)
     print("\nChuyển vị của v:")
     print(transpose_v)
-
+create_and_modify_matrix()
 ## MATHS
 # 5/ Compute the norm of x=(2,7). Normalization vector x.
 def compute_norm_and_normalize():
@@ -242,6 +245,7 @@ def compute_norm_and_normalize():
     print("\nChuẩn của vector x:", norm_x)
     print("\nVector x sau khi chuẩn hóa:")
     print(normalized_x)
+compute_norm_and_normalize()
 # 6/ Given a=[10,15], b=[8,2] and c=[1,2,3]. Compute a+b, a-b, a-c. Do all of them work? Why?
 def compute_operations():
     # Định nghĩa các vector
@@ -268,7 +272,7 @@ def compute_operations():
     print("\na + b:", sum_ab)
     print("a - b:", diff_ab)
     print("\na - c:", diff_ac)
-
+compute_operations()
 # 7/ Compute the dot product of a and b.
 def compute_dot_product():
     # Định nghĩa các vector
@@ -282,6 +286,7 @@ def compute_dot_product():
     print("Vector a:", a)
     print("Vector b:", b)
     print("\nTích vô hướng của a và b:", dot_product)
+compute_dot_product()
 # 8/ Given matrix A=[[2,4,9],[3,6,7]].
 # 	a/ Check the rank and shape of A
 # 	b/ How can get the value 7 in A?
@@ -309,28 +314,28 @@ def analyze_matrix():
     print("\nGiá trị 7 trong A:", value_7)
     print("\nCột thứ hai của A:")
     print(second_column)
-
+analyze_matrix()
 #9/ Create a random  3x3 matrix  with the value in range (-10,10).
 def create_random_matrix():
     # Tạo ma trận 3x3 với giá trị ngẫu nhiên trong khoảng (-10, 10)
     matrix = np.random.randint(-10, 10, size=(3, 3))
     print("Ma trận ngẫu nhiên 3x3:")
     print(matrix)
-
+create_random_matrix()
 #10/ Create an identity (3x3) matrix.
 def create_identity_matrix():
     # Tạo ma trận đơn vị 3x3
     identity_matrix = np.eye(3)
     print("Ma trận đơn vị 3x3:")
     print(identity_matrix)
-
+create_identity_matrix()
 #11/ Create a 3x3 random matrix with the value in range (1,10). Compute the trace of this matrix by 2 ways:
 	# a/ By one command
 def compute_trace_one_command():
     matrix = np.random.randint(1, 10, size=(3, 3))
     # Tính trace bằng một lệnh
     print("Trace (bằng một lệnh):", np.trace(matrix))
-
+compute_trace_one_command()
 # b/ By using for loops
 def compute_trace_with_loops():
     matrix = np.random.randint(1, 10, size=(3, 3))
@@ -339,7 +344,7 @@ def compute_trace_with_loops():
     for i in range(matrix.shape[0]):  # Duyệt qua các hàng
         trace += matrix[i, i]  # Cộng giá trị đường chéo
     print("Trace (bằng vòng lặp):", trace)
-
+compute_trace_with_loops()
 #12/Create a 3x3 diagonal matrix with the value in main diagonal 1,2,3.
 def create_diagonal_matrix():
     # Tạo ma trận chéo 3x3 với các giá trị 1, 2, 3 trên đường chéo chính
@@ -348,7 +353,7 @@ def create_diagonal_matrix():
     diagonal_matrix = np.diag(diagonal_values)
     print("Ma trận chéo 3x3:")
     print(diagonal_matrix)
-
+create_diagonal_matrix()
 #13/ Given A=[[1,1,2],[2,4,-3],[3,6,-5]]. Compute the determinant of A
 
 
@@ -362,8 +367,8 @@ def compute_determinant():
 
     # Tính định thức
     print("Định thức của ma trận A:", np.linalg.det(A))
-
 compute_determinant()
+
 
 #14/ Given a1=[1,-2,-5] and a2=[2,5,6]. Create a matrix M such that the first column is a1 and the second column is a2.
 def create_matrix():
@@ -373,7 +378,7 @@ def create_matrix():
     #Sử dụng hàm np.column_stack để kết hợp hai danh sách thành một ma trận, trong đó mỗi danh sách trở thành một cột.
     M = np.column_stack((a1, a2))
     print("Ma trận M:",M)
-
+create_matrix()
 
 #15/ Simply plot the value of the square of y with y in range (-5<=y<6).
 # Tạo giá trị y trong khoảng từ -5 đến 5
@@ -395,7 +400,7 @@ def plot_square_of_y():
     plt.xlim(-5, 5)
     plt.ylim(0, 30)
     plt.show()
-
+plot_square_of_y()
 
 #16/ Create 4-evenly-spaced values between 0 and 32 (including endpoints)
 def create_evenly_spaced_values(  ):
@@ -405,7 +410,7 @@ def create_evenly_spaced_values(  ):
     num_values = 4
     values = np.linspace(start, end, num_values)
     print("4 giá trị cách đều giữa 0 và 32:", values)
-
+create_evenly_spaced_values()
 #17/ Get 50 evenly-spaced values from -5 to 5 for x. Calculate y=x**2. Plot (x,y).
 def plot_parabola():
     # Tạo 50 giá trị cách đều từ -5 đến 5
@@ -419,12 +424,12 @@ def plot_parabola():
     plt.title("Đồ thị của y = x^2")
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.grid()
+    plt.grid(True)
     plt.axhline(0, color='black', linewidth=0.5, ls='--')
     plt.axvline(0, color='black', linewidth=0.5, ls='--')
     plt.xlim(-5, 5)
     plt.ylim(0, 30)
-
+plot_parabola()
 #18/ Plot y=exp(x) with label and title.
 def plot_exponential():
     # Tạo giá trị x từ -2 đến 2
@@ -445,27 +450,28 @@ def plot_exponential():
     plt.xlim(-2, 2)
     plt.ylim(0, np.exp(2))
     plt.show()
+plot_exponential()
 #19/ Similarly for y=log(x) with x from 0 to 5.
-    def plot_logarithm():
-        # Tạo giá trị x từ 0.01 đến 5 (bắt đầu từ 0.01 để tránh log(0))
-        x = np.linspace(0.01, 5, 100)
+def plot_logarithm():
+    # Tạo giá trị x từ 0.01 đến 5 (bắt đầu từ 0.01 để tránh log(0))
+    x = np.linspace(0.01, 5, 100)
 
-        # Tính y = log(x)
-        y = np.log(x)
+    # Tính y = log(x)
+    y = np.log(x)
 
-        # Vẽ đồ thị
-        plt.plot(x, y, label='y = log(x)', color='green')
-        plt.title("Đồ thị của y = log(x)")
-        plt.xlabel("x")
-        plt.ylabel("y")
-        plt.legend()
-        plt.grid()
-        plt.axhline(0, color='black', linewidth=0.5, ls='--')
-        plt.axvline(0, color='black', linewidth=0.5, ls='--')
-        plt.xlim(0, 5)
-        plt.ylim(-3, np.log(5))
-        plt.show()
-
+    # Vẽ đồ thị
+    plt.plot(x, y, label='y = log(x)', color='green')
+    plt.title("Đồ thị của y = log(x)")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.legend()
+    plt.grid()
+    plt.axhline(0, color='black', linewidth=0.5, ls='--')
+    plt.axvline(0, color='black', linewidth=0.5, ls='--')
+    plt.xlim(0, 5)
+    plt.ylim(-3, np.log(5))
+    plt.show()
+plot_logarithm()
 #20/ Draw two graphs y=exp(x), y=exp(2*x) in the same graph and y=log(x) and y=log(2*x) in the same graph using subplot.
 def plot_exponential_and_logarithm():
     # Tạo giá trị x cho đồ thị hàm số mũ
@@ -505,3 +511,4 @@ def plot_exponential_and_logarithm():
     # Hiển thị đồ thị
     plt.tight_layout()
     plt.show()
+plot_exponential_and_logarithm()
